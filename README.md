@@ -46,14 +46,3 @@ back to the wagon.
 | `music.py` | plays the per-landmark MML tunes from `assets/SONGS.TXT`. |
 | `gui.py` | tkinter front end drawing the real MCGA art (`assets/mcga/`): title, setup, store, animated traveling scene, per-landmark scenes (`p0`–`p17`), rivers, forks, hunting, map, and scoring. |
 | `assets/` | the art (`mcga/*.png`) plus `SONGS.TXT` and `HISCORES.REC` the game reads at runtime. |
-
-## Fidelity notes
-
-- **Verified from the binary / live play:** trail landmarks and mileages, all store prices
-  and the per-fort markup rule, the scoring formula, the game enums, and the
-  river/guide/fork mechanics.
-- **Approximate (`[tune]`):** exact event probabilities, the daily-mileage and health
-  formulas, and hunting yield. These match observed behaviour but are not byte-exact;
-  they're isolated constants in `data.py`/`engine.py` and easy to refine.
-- Carpenter/farmer starting cash ($800/$400) is folklore; only the banker's $1600 was
-  confirmed on screen.
